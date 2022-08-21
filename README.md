@@ -10,6 +10,8 @@ This project can help you memorize Japanese Kanas by randomly show each Kana wit
 ![interface](./images/interface.png)
 
 Press **Backspace** or **LeftArrow** to Roll Back to the Previous;
+
 Press **Enter** or **RightArrow** to Go Forward to the Next;
+
 Press **Space** to Show All or Hide.
 
