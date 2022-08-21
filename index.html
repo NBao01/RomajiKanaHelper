@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Romaji-Kana Helper</title>
+</head>
+
+<body>
+<h1>Romaji-Kana Helper</h1>
+
+<!--<span style="font-size:1.5em"><span id="current iter"></span>/<span id="total num"></span></span>-->
+
+<table class="wikitable">
+    <caption style="font-size:1.5em;text-align:right"><span id="current iter"></span>/<span id="total num"></span></caption>
+    <tbody><tr style="font-size:2em">
+        <th style="width:10em">Romaji</th><th style="width:10em">Hiragana</th><th style="width:10em">Katakana</th></tr>
+    <tr style="font-size:8em;text-align:center;height:1.8em">
+        <td id="romaji">a</td><td id="hiragana">あ</td><td id="katakana">ア</td></tr>
+<!--    <tr style="font-size:2em;text-align:center;">-->
+<!--        <td>i</td><td>い</td><td>イ</td></tr>-->
+<!--    <tr style="font-size:2em;text-align:center;">-->
+<!--        <td>u</td><td>う</td><td>ウ</td></tr>-->
+<!--    <tr style="font-size:2em;text-align:center;">-->
+<!--        <td>e</td><td>え</td><td>エ</td></tr>-->
+<!--    <tr style="font-size:2em;text-align:center;">-->
+<!--        <td>o</td><td>お</td><td>オ</td></tr>-->
+    </tbody>
+</table>
+
+<div>
+<button class="sans" id="Previous" style="text-align:center;height:4em;width:15em;margin:0.5em 0.5em 0.5em 0;">
+    <b><span style="font-size:2em;">← Previous</span></b>
+</button>
+
+<button class="sans" id="Next" style="text-align:center;height:4em;width:15em;margin:0.5em 0.5em 0.5em 0;">
+    <b><span style="font-size:2em;">Next →</span></b>
+</button>
+
+<button class="sans" id="Show All" style="text-align:center;height:4em;width:15em;margin:0.5em 0.5em 0.5em 0;">
+    <b><span id="Show All InnerText" style="font-size:2em;">Show All</span></b>
+</button>
+
+<!--<button id="More Settings" style="text-align:center;height:4em;width:15em;margin:0.5em 0 0.5em 0;">-->
+<!--    <span style="font-size:2em;">More Settings</span>-->
+<!--</button>-->
+</div>
+
+<div class="wikitable" style="width:40em;text-align:left">
+    <div style="font-size:1.5em;text-align:center"><b>Usage</b></div>
+    <div style="font-size:1.2em;margin:0.2em 0.2em">
+    <b>Press <span style="color:red">Backspace</span> or <span style="color:red">LeftArrow</span> to Roll Back to the Previous;</b><br>
+    <b>Press <span style="color:red">Enter</span> or <span style="color:red">RightArrow</span> to Go Forward to the Next;</b><br>
+    <b>Press <span style="color:red">Space</span> to Show All or Hide.</b>
+<!--    <b>Press <span style="color:red">M</span> to Show More Settings.</b><br>-->
+    </div>
+</div>
+
+<div class="wikitable" style="width:20em;text-align:left" id="Settings">
+    <div style="font-size:1.5em;text-align:center"><b>Settings</b></div>
+    <div style="font-size:1.2em;margin:0.2em 0.2em">
+    <b>Default Display Setting:</b><br>
+    <input type="checkbox" id="setting1" checked><label for="setting1">Show Romaji by Default</label><br>
+    <input type="checkbox" id="setting2"><label for="setting2">Show Hiragana by Default</label><br>
+    <input type="checkbox" id="setting3"><label for="setting3">Show Katakana by Default</label><br>
+    <b>Romaji System Setting:</b><br>
+    <input type="radio" name="setting4" id="setting41" checked><label for="setting41">Hebon-shiki Romaji by Default</label><br>
+    <input type="radio" name="setting4" id="setting42"><label for="setting42">Kunrei-shiki Romaji by Default</label><br>
+    <b>Romaji System Setting:</b><br>
+    <input type="checkbox" name="setting51" id="setting51" checked><label for="setting51">Gojuon</label><br>
+    <input type="checkbox" name="setting52" id="setting52"><label for="setting52">Dakuten and Gandakuten</label><br>
+    <input type="checkbox" name="setting53" id="setting53"><label for="setting53">Yoon</label><br>
+    </div>
+</div>
+
+<script src="index.js"></script>
+</body>
+
+<footer>
+    © 2022 NBao
+</footer>
+</html>
