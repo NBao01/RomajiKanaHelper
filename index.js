@@ -54,7 +54,7 @@ gojuon_kana_table = {
     'n': {'hebon_romaji': 'n', 'kunrei_romaji': 'n', 'hiragana': 'ん', 'katakana': 'ン'},
 };
 
-dakuten_handakuten_kana_table = {
+dakuon_handakuon_kana_table = {
     'ga': {'hebon_romaji': 'ga', 'kunrei_romaji': 'ga', 'hiragana': 'が', 'katakana': 'ガ'},
     'gi': {'hebon_romaji': 'gi', 'kunrei_romaji': 'gi', 'hiragana': 'ぎ', 'katakana': 'ギ'},
     'gu': {'hebon_romaji': 'gu', 'kunrei_romaji': 'gu', 'hiragana': 'ぐ', 'katakana': 'グ'},
@@ -292,7 +292,7 @@ function Setting5Click() {
         romaji_kana_table = Object.assign({}, romaji_kana_table, gojuon_kana_table);
     }
     if (document.getElementById("setting52").checked) {
-        romaji_kana_table = Object.assign({}, romaji_kana_table, dakuten_handakuten_kana_table);
+        romaji_kana_table = Object.assign({}, romaji_kana_table, dakuon_handakuon_kana_table);
     }
     if (document.getElementById("setting53").checked) {
         romaji_kana_table = Object.assign({}, romaji_kana_table, yoon_kana_table);
