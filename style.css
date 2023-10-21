@@ -1,16 +1,16 @@
 body {
     font-family: 'Lucida Sans', 'Source Sans Pro', sans-serif;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
 }
 
 footer {
-    height: 40px; /*设定footer高度*/
+    height: 60px; /*设定footer高度*/
     position: fixed; /*设定footer绝对位置在底部*/
     bottom: 0;
     width: 100%; /*展开footer宽度*/
     background-color: white;
     line-height: 20px;
-    margin-top: -40px;
+    margin-top: -60px;
 }
 
 .sans {
