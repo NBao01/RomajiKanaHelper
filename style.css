@@ -9,12 +9,12 @@ footer {
     bottom: 0;
     width: 100%; /*展开footer宽度*/
     background-color: white;
-    line-height: 40px;
+    line-height: 20px;
     margin-top: -40px;
 }
 
 .sans {
-    font-family: 'Lucida Sans', 'Source Sans Pro', sans-serif
+    font-family: 'Lucida Sans', 'Source Sans Pro', sans-serif;
 }
 
 .wikitable {

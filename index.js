@@ -133,17 +133,17 @@ window.onkeydown = function(e){ //event可以简写成 e
     // alert(e.key);
     // console.log(e.key);//不喜欢弹窗的话 可以通过控制台输出查看信息
     e.preventDefault();
-    if (e.key === 'Enter' || e.key === 'ArrowRight') {
+    if (e.key === 'ArrowRight' || e.key === 'ArrowDown' || e.key === 'D' || e.key === 'd' || e.key === 'S' || e.key === 's') {
         document.getElementById("Next").click();
     }
-    else if (e.key === 'Backspace' || e.key === 'ArrowLeft') {
+    else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp' || e.key === 'A' || e.key === 'a' || e.key === 'W' || e.key === 'w') {
         document.getElementById("Previous").click();
     }
     else if (e.key === ' ') {
         document.getElementById("Show All").click();
     }
-    else if (e.key === 'M' || e.key === 'm') {
-        document.getElementById("More Settings").click();
+    else if (e.key === 'Enter') {
+        document.getElementById("Play Audio").click();
     }
 }
 
@@ -216,6 +216,11 @@ function ShowAllClick() {
 
     settings.show_all = !settings.show_all;
     UpdateDisplay();
+}
+
+document.getElementById("Play Audio").addEventListener('click', PlayClick);
+function PlayClick() {
+    audio.play()
 }
 
 // document.getElementById("More Settings").addEventListener('mouseover', MoreSettingsOver)
@@ -342,6 +347,8 @@ function UpdateDisplay() {
         document.getElementById("katakana").innerText =
             settings.katakana_default ? romaji_kana_table[key]['katakana'] : '';
     }
+
+    window.audio = new Audio(`./audio/${key}.mp3`)
 }
 
 // UpdateDisplay();
