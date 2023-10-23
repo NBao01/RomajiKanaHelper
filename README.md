@@ -3,7 +3,7 @@
 
 ## NOTICE (Very Important)
 
-The audios are granted for personal use only, <b style="color:red">DO NOT</b> use or distribute them on the public Internet.
+The audios are granted for personal use only, <b style="color:red">DO NOT</b> use or distribute them in public.
 
 ## Update
 
