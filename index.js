@@ -142,9 +142,9 @@ window.onkeydown = function(e){ //event可以简写成 e
     else if (e.key === ' ') {
         document.getElementById("Show All").click();
     }
-    // else if (e.key === 'Enter') {
-    //     document.getElementById("Play Audio").click();
-    // }
+    else if (e.key === 'Enter') {
+        document.getElementById("Play Audio").click();
+    }
 }
 
 function shuffle(arr) {
@@ -218,10 +218,10 @@ function ShowAllClick() {
     UpdateDisplay();
 }
 
-// document.getElementById("Play Audio").addEventListener('click', PlayClick);
-// function PlayClick() {
-//     audio.play()
-// }
+document.getElementById("Play Audio").addEventListener('click', PlayClick);
+function PlayClick() {
+    audio.play()
+}
 
 // document.getElementById("More Settings").addEventListener('mouseover', MoreSettingsOver)
 // function MoreSettingsOver() {
@@ -348,7 +348,7 @@ function UpdateDisplay() {
             settings.katakana_default ? romaji_kana_table[key]['katakana'] : '';
     }
 
-    // window.audio = new Audio(`./audio/${key}.mp3`)
+    window.audio = new Audio(`./audio/${key}.mp3`)
 }
 
 // UpdateDisplay();
